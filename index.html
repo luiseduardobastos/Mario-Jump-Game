@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+
+    <title>Mario Jump</title>
+</head>
+<body>
+    <div class="game-board">
+        <div class="info-iniciais">
+            <h1>Clique em qualquer tecla para pular, após iniciar o jogo!</h1>
+        <h1>Boa sorte!</h1>
+        </div>
+        <img src="./assets/clouds.png" class="clouds">
+        <img src="./assets/mario.gif" class="mario">
+        <img src="./assets/pipe.png" class="pipe">
+    </div>
+
+    <div class="info">
+        <div class="row">
+            <div class="direito">
+                <h1 class="title">Mario Jump Game</h1>
+            </div>
+            <div class="esquerdo">
+                <h1 class="title" id="text-pontuacao">Pontuação: <span id="points"></span></h1>
+            </div>
+        </div>
+        <hr>
+        <div class="actions-row">
+            <div class="details">
+                <br>
+                <h3>Jogo clássico do Mário, só que feito de forma mais simples para aprendizado.</h3>
+                <p>Por: @luis.eduardobastos</p>
+            </div>
+            <div class="action">
+                <br>
+                <button type="button" class="btn" id="btn-iniciar">Iniciar</button>
+                <button type="button" class="btn" id="btn-recomecar">Recomeçar</button>
+            </div>
+        </div>
+    </div>
+
+    <audio src="./assets/sound.mp3" class="audio"></audio>
+    <audio src="./assets/lose.mp3" class="lose"></audio>
+    <audio src="./assets/music.mp3" class="music"></audio>
+
+    <script src="./js/script.js" defer></script>
+</body>
+</html>
